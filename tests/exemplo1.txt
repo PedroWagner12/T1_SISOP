@@ -1,0 +1,7 @@
+# matriz obrigatoria 1 do enunciado - 3 objetos esperados
+5 5
+1 1 0 0 0
+1 1 0 0 0
+0 0 0 1 0
+0 0 0 1 0
+1 0 0 0 0

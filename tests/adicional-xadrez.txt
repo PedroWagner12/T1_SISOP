@@ -1,0 +1,10 @@
+# tabuleiro de xadrez: com conectividade 8 tudo se liga pelas diagonais
+8 8
+1 0 1 0 1 0 1 0
+0 1 0 1 0 1 0 1
+1 0 1 0 1 0 1 0
+0 1 0 1 0 1 0 1
+1 0 1 0 1 0 1 0
+0 1 0 1 0 1 0 1
+1 0 1 0 1 0 1 0
+0 1 0 1 0 1 0 1

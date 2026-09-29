@@ -1,0 +1,13 @@
+# arquivo  objetos_esperados
+exemplo1.txt 3
+exemplo2.txt 4
+exemplo3.txt 5
+exemplo4.txt 6
+exemplo5.txt 7
+adicional-vazia.txt 0
+adicional-cheia.txt 1
+adicional-diagonal.txt 1
+adicional-xadrez.txt 1
+adicional-listras-horizontais.txt 8
+adicional-listras-verticais.txt 8
+adicional-celula-unica.txt 1

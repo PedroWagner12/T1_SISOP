@@ -1,0 +1,92 @@
+Testes de corretude - 2026-09-29 19:50:45
+Maquina: Linux x86_64
+
+=== 1. Matrizes obrigatorias - versao sequencial ===
+Versao sequencial - conectividade 8
+
+Ex  Dimensoes   Esperado  Obtido  Situacao  Tempo (s)
+ 1    5 x 5            3       3  OK        0.000001
+ 2    6 x 8            4       4  OK        0.000002
+ 3    8 x 8            5       5  OK        0.000001
+ 4    9 x 12           6       6  OK        0.000002
+ 5   12 x 12           7       7  OK        0.000003
+
+Todos os 5 casos obrigatorios conferem.
+
+=== 2. Matrizes obrigatorias - versao paralela ===
+
+Versao paralela - conectividade 8 - 1 thread(s)
+
+Ex  Dimensoes   Esperado  Sequencial  Paralelo  Situacao  Tempo par. (s)
+ 1    5 x 5            3           3         3  OK        0.000122
+ 2    6 x 8            4           4         4  OK        0.000095
+ 3    8 x 8            5           5         5  OK        0.000082
+ 4    9 x 12           6           6         6  OK        0.000071
+ 5   12 x 12           7           7         7  OK        0.000059
+
+Todos os 5 casos obrigatorios conferem, e a versao paralela reproduz a sequencial.
+
+Versao paralela - conectividade 8 - 2 thread(s)
+
+Ex  Dimensoes   Esperado  Sequencial  Paralelo  Situacao  Tempo par. (s)
+ 1    5 x 5            3           3         3  OK        0.000267
+ 2    6 x 8            4           4         4  OK        0.000291
+ 3    8 x 8            5           5         5  OK        0.000273
+ 4    9 x 12           6           6         6  OK        0.000228
+ 5   12 x 12           7           7         7  OK        0.000281
+
+Todos os 5 casos obrigatorios conferem, e a versao paralela reproduz a sequencial.
+
+Versao paralela - conectividade 8 - 3 thread(s)
+
+Ex  Dimensoes   Esperado  Sequencial  Paralelo  Situacao  Tempo par. (s)
+ 1    5 x 5            3           3         3  OK        0.000294
+ 2    6 x 8            4           4         4  OK        0.000294
+ 3    8 x 8            5           5         5  OK        0.000233
+ 4    9 x 12           6           6         6  OK        0.000320
+ 5   12 x 12           7           7         7  OK        0.000504
+
+Todos os 5 casos obrigatorios conferem, e a versao paralela reproduz a sequencial.
+
+Versao paralela - conectividade 8 - 4 thread(s)
+
+Ex  Dimensoes   Esperado  Sequencial  Paralelo  Situacao  Tempo par. (s)
+ 1    5 x 5            3           3         3  OK        0.000560
+ 2    6 x 8            4           4         4  OK        0.000324
+ 3    8 x 8            5           5         5  OK        0.000481
+ 4    9 x 12           6           6         6  OK        0.000427
+ 5   12 x 12           7           7         7  OK        0.000456
+
+Todos os 5 casos obrigatorios conferem, e a versao paralela reproduz a sequencial.
+
+Versao paralela - conectividade 8 - 8 thread(s)
+
+Ex  Dimensoes   Esperado  Sequencial  Paralelo  Situacao  Tempo par. (s)
+ 1    5 x 5            3           3         3  OK        0.000536
+ 2    6 x 8            4           4         4  OK        0.000788
+ 3    8 x 8            5           5         5  OK        0.001318
+ 4    9 x 12           6           6         6  OK        0.001404
+ 5   12 x 12           7           7         7  OK        0.001239
+
+Todos os 5 casos obrigatorios conferem, e a versao paralela reproduz a sequencial.
+
+=== 3. Testes adicionais (arquivos em tests/) ===
+
+Arquivo                            Esperado  Seq  Par1  Par2  Par4  Par7  Situacao
+exemplo1.txt                              3    3     3     3     3     3  OK
+exemplo2.txt                              4    4     4     4     4     4  OK
+exemplo3.txt                              5    5     5     5     5     5  OK
+exemplo4.txt                              6    6     6     6     6     6  OK
+exemplo5.txt                              7    7     7     7     7     7  OK
+adicional-vazia.txt                       0    0     0     0     0     0  OK
+adicional-cheia.txt                       1    1     1     1     1     1  OK
+adicional-diagonal.txt                    1    1     1     1     1     1  OK
+adicional-xadrez.txt                      1    1     1     1     1     1  OK
+adicional-listras-horizontais.txt         8    8     8     8     8     8  OK
+adicional-listras-verticais.txt           8    8     8     8     8     8  OK
+adicional-celula-unica.txt                1    1     1     1     1     1  OK
+
+=== 4. Teste aleatorio: paralelo x sequencial (40 matrizes) ===
+40 matrizes aleatorias: a versao paralela reproduziu a sequencial em todos os casos.
+
+Resultado gravado em results/corretude.txt

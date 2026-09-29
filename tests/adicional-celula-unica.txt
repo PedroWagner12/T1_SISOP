@@ -1,0 +1,3 @@
+# caso minimo: matriz 1x1 com um objeto
+1 1
+1
