@@ -1,4 +1,4 @@
-Analise de desempenho - 2026-09-29 19:51:12
+Analise de desempenho - 2026-10-05 18:22:42
 Sistema ..........: Linux x86_64
 Nucleos logicos ..: 12
 Compilador .......: cc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
@@ -10,47 +10,47 @@ Matriz: 4000 x 4000 | densidade 30% | semente 42
 Objetos contados: 756273 (identico em todas as configuracoes)
 
 Versao                  Tempo med.(s)   Aceleracao     Eficiencia
-sequencial                   0.198457         1.00              -
-paralelo (1 threads)         0.294674         0.67            67%
-paralelo (2 threads)         0.165902         1.20            60%
-paralelo (4 threads)         0.101805         1.95            49%
-paralelo (8 threads)         0.077674         2.55            32%
+sequencial                   0.278486         1.00              -
+paralelo (1 threads)         0.440975         0.63            63%
+paralelo (2 threads)         0.255961         1.09            54%
+paralelo (4 threads)         0.179507         1.55            39%
+paralelo (8 threads)         0.118013         2.36            29%
 
 Detalhe das fases com 4 threads:
 Componentes locais .: 758112
 Fusoes nas fronteiras: 1839
-Ultima execucao - rotulagem: 0.096487 s | fusao: 0.000534 s | contagem: 0.004004 s
+Ultima execucao - rotulagem: 0.141986 s | fusao: 0.001016 s | contagem: 0.004641 s
 
 --- Carga: grande densa (poucos objetos gigantes) ---
 Matriz: 4000 x 4000 | densidade 45% | semente 7
 Objetos contados: 117108 (identico em todas as configuracoes)
 
 Versao                  Tempo med.(s)   Aceleracao     Eficiencia
-sequencial                   0.408503         1.00              -
-paralelo (1 threads)         0.520713         0.78            78%
-paralelo (2 threads)         0.277572         1.47            74%
-paralelo (4 threads)         0.161644         2.53            63%
-paralelo (8 threads)         0.110917         3.68            46%
+sequencial                   0.575346         1.00              -
+paralelo (1 threads)         0.746867         0.77            77%
+paralelo (2 threads)         0.404775         1.42            71%
+paralelo (4 threads)         0.257124         2.24            56%
+paralelo (8 threads)         0.168954         3.41            43%
 
 Detalhe das fases com 4 threads:
 Componentes locais .: 118357
 Fusoes nas fronteiras: 1249
-Ultima execucao - rotulagem: 0.152627 s | fusao: 0.000733 s | contagem: 0.001142 s
+Ultima execucao - rotulagem: 0.267699 s | fusao: 0.001834 s | contagem: 0.001534 s
 
 --- Carga: pequena (custo de criacao domina) ---
 Matriz: 200 x 200 | densidade 30% | semente 1
 Objetos contados: 1885 (identico em todas as configuracoes)
 
 Versao                  Tempo med.(s)   Aceleracao     Eficiencia
-sequencial                   0.000590         1.00              -
-paralelo (1 threads)         0.000892         0.66            66%
-paralelo (2 threads)         0.000673         0.88            44%
-paralelo (4 threads)         0.000670         0.88            22%
-paralelo (8 threads)         0.001025         0.58             7%
+sequencial                   0.000850         1.00              -
+paralelo (1 threads)         0.001505         0.56            56%
+paralelo (2 threads)         0.002251         0.38            19%
+paralelo (4 threads)         0.001935         0.44            11%
+paralelo (8 threads)         0.002857         0.30             4%
 
 Detalhe das fases com 4 threads:
 Componentes locais .: 1968
 Fusoes nas fronteiras: 83
-Ultima execucao - rotulagem: 0.000756 s | fusao: 0.000283 s | contagem: 0.000009 s
+Ultima execucao - rotulagem: 0.001591 s | fusao: 0.000579 s | contagem: 0.000011 s
 
 Resultado gravado em results/desempenho.txt
