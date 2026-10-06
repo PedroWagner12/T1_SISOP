@@ -15,6 +15,8 @@ e uma paralela com Pthreads (POSIX Threads).
 
 Repositório: https://github.com/PedroWagner12/T1_SISOP
 
+Vídeo da apresentação: https://youtu.be/McfPHyLeQQY
+
 ## Compilação
 
 Requer um compilador C com suporte a ANSI C (C89/C90) e à biblioteca Pthreads, em Linux ou macOS.
